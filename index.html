@@ -8,140 +8,12 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
-
-
-<body class="corfundo">
-    
-    <div class="fundo-home">
-
-
-<!-- BARRA DE NAVEGAÇÃO -->
-        
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom-4 h80 navbar-transparent shadow">
-            <div class="container">
-                
-                <a class="navbar-brand align-items-center" href="#">
-
-                    <img src="Logo Branca Menor.png" alt="Logo" class=" Logo-navbar rounded-pill">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#txt-nav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                <div class="collapse navbar-collapse " id="txt-nav">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link cor-txt-nav- mx-4 active" href="#">Home</a>
-                        <a class="nav-link cor-txt-nav- mx-4" href="#">Sobre</a>
-                        <a class="nav-link cor-txt-nav- mx-4" href="#">Trabalhos</a>
-                        <a class="nav-link cor-txt-nav- mx-4" href="#">Histórico</a>
-                        <a class="nav-link cor-txt-nav- mx-4" href="#">Contato</a>
-                    </div>   
-                </div>
-                </a>
-            </div>
-        </nav>
-
-
-<!-- HOME -->
-
-<div class="container">
-    
-    <div class="row align-items-center">
-        
-        <div class="col bem-vindo border-end border-start ">
-            <img src="Bem vindo.png" style="height: 350px; width: 350px;" class="mt-5 ">
-            
-        </div>
-
-        <div class="col ">
-                    <div class="text-off-on roboto-mono mx-auto mt-5"><h5><u>Raul Ferrandis Carvalho</u></h5></div>
-        </div>
-                
-                <div class="col">
-
-                    <div class="carousel slide carousel-fade mx" data-bs-ride="carousel" id="ads">
-
-                        <div class="carousel-indicators">
-
-                            <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
-
-                            <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
-
-                            <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
-
-                            <button class="" data-bs-target="#ads" data-bs-slide-to="3"></button>
-
-                            <button class="" data-bs-target="#ads" data-bs-slide-to="4"></button>
-                            
-                        </div>
-
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">                           
-                                <img src="2.Avatar.png" alt="Avatar" style="height: 420px;">
-                            </div>
-
-                            <div class="carousel-item active">                           
-                                <img src="5.Avatar.png" alt="Avatar" style="height: 420px;">
-                            </div>
-
-                            <div class="carousel-item active">                           
-                                <img src="3.Avatar.png" alt="Avatar" style="height: 420px;">
-                            </div>
-
-                            <div class="carousel-item active">                           
-                                <img src="4.Avatar.png" alt="Avatar" style="height: 420px;">
-                            </div>
-
-                            <div class="carousel-item active">                           
-                                <img src="1.Avatar.png" alt="Avatar" style="height: 420px;">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container-fluid bg-dark" style="height: 300px;">
-
-        </div>
-
-<!-- FUNDO FIXO -->
-</div>
-
-        <div class="container" style="height: 80px;"></div>
-
-        <footer class="p-lg-4 bg-dark text-center" style="height: 80px;">
-            
-            <img src="Logo Branca Menor.png" class="container-end" style="width: 50px; ">
-            
-        </footer>
-        
-  <!-- Breakpoints (escrever depoiskkk) -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-
-    window.onscroll = function() {
-var navbar = document.querySelector('.navbar');
-if (window.scrollY > 50) {  // Quando rolar mais que 50px, aplica a navbar sólida
-navbar.classList.remove('navbar-transparent');
-navbar.classList.add('navbar-solid');
-} else {  // Quando estiver no topo, aplica a navbar transparente
-navbar.classList.remove('navbar-solid');
-navbar.classList.add('navbar-transparent');
-}
-};
-
-</script>
 
 <style>
 
-    
+  
     .fundo-home {
         background-image: url(fundo\ site.jpg); /* Imagem de fundo */
         background-size: cover; 
@@ -163,7 +35,7 @@ navbar.classList.add('navbar-transparent');
     }
     
     .navbar {
-      transition: background-color 0.3s ease; /* Transição suave de fundo */
+      transition: background-color 0.3s ease; /* Transição suave barrade navegação*/
     }
 
     /* Navbar transparente (inicialmente) */
@@ -185,7 +57,7 @@ navbar.classList.add('navbar-transparent');
     }
 
     .cor-azul2{
-        background-color: #003A78;
+        background-color: #003A78; /* Paleta de cores */
     }
 
     .cor-azul3{
@@ -202,7 +74,7 @@ navbar.classList.add('navbar-transparent');
         font-size: 1.5rem;
         font-weight: 400;
 
-        border-right: 16px solid white;
+        border-right: 16px solid white; /* Efeito deescrever e apagar */
         white-space: nowrap;
 
         overflow: hidden;
@@ -226,7 +98,7 @@ navbar.classList.add('navbar-transparent');
         }
 
         70%{
-            width: 20.5ch;
+            width: 20.5ch; /* Determina até onde vai escrever e apagar */
         }
 
         85%{
@@ -239,19 +111,187 @@ navbar.classList.add('navbar-transparent');
     }
 
     .bem-vindo{
-        background-color: rgb(13, 39, 66, 0.5);
+        background-color: rgb(13, 39, 66, 0.5); /* Fundo da paete Bem-vindo OBS: 0.5 dentro do rgb determina a opacidade*/
         height: 550px;
         width: 400px;
     }
 
 
     .roboto-mono {
-  font-family: "Roboto Mono", serif;
+  font-family: "Roboto Mono", serif; /* Fonte Roboto Mono */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+.open-sans {
+  font-family: "Open Sans", serif; /* Fonte Open Sans */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" ;
+}
+
+.text-sublin {
+    text-decoration: underline;
+    text-decoration-color: #315985; /* Cor do sublinhado */
+  }
 </style>
+
+
+<body>
+    
+    <div class="fundo-home">
+
+
+<!-- <BARRA DE NAVEGAÇÃO> -->
+        
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded-bottom-4 h80 navbar-transparent shadow">
+            <div class="container">
+                
+                <a class="navbar-brand align-items-center" href="#">
+
+                    <img src="Logo Branca Menor.png" alt="Logo" class=" Logo-navbar rounded-pill img-fluid">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#txt-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse " id="txt-nav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link cor-txt-nav- mx-4 active" href="#">Home</a>
+                        <a class="nav-link cor-txt-nav- mx-4" href="#">Sobre</a>
+                        <a class="nav-link cor-txt-nav- mx-4" href="#">Trabalhos</a>
+                        <a class="nav-link cor-txt-nav- mx-4" href="#">Histórico</a>
+                        <a class="nav-link cor-txt-nav- mx-4" href="#">Contato</a>
+                    </div>   
+                </div>
+                </a>
+            </div>
+        </nav>
+
+
+<!-- <HOME> -->
+
+
+<div class="container">
+    
+    <div class="row align-items-center">
+        
+        <div class="col bem-vindo border-end border-start ">
+            <img src="Bem vindo.png" style="height: 350px; width: 350px;" class="mt-5 img-fluid">
+            
+        </div>
+
+        <div class="col ">
+                    <div class="text-off-on roboto-mono mx-auto mt-5"><h5><u>Raul Ferrandis Carvalho</u></h5></div>
+        </div>
+                
+                <div class="col-5">
+
+                    <div class="carousel slide carousel-fade mx" data-bs-ride="carousel" id="ads">
+
+                        <div class="carousel-indicators">
+
+                            <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="3"></button>
+
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="4"></button>
+                            
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">                           
+                                <img src="2.Avatar.png" alt="Avatar" style="height: 420px;" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item active">                           
+                                <img src="5.Avatar.png" alt="Avatar" style="height: 420px;" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item active">                           
+                                <img src="3.Avatar.png" alt="Avatar" style="height: 420px;" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item active">                           
+                                <img src="4.Avatar.png" alt="Avatar" style="height: 420px;" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item active">                           
+                                <img src="1.Avatar.png" alt="Avatar" style="height: 420px;" class="img-fluid">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- <SOBRE> -->
+
+
+<div class="container-fluid bg-white">
+
+    <div class="container" style="height: 75px;"></div>
+
+    <div class="container m-5 ">
+        <h1 class="open-sans text-start "><u class="text-sublin">\ Sobr</u>e \</h1>
+        <hr>
+    </div>
+
+    <div class="container ">
+        <img src="Minha foto.jpeg" class="img-fluid rounded-circle m-5" style="width: 350px;">
+    </div>
+
+    <div class="container">
+        <h5 class="open-sans"> Meu nome é Raul Ferrandis Carvalho, nasci na capital paulista, mas atualmente estou na Baixada Santista, em Itanhaém. Meu foco hoje é área de Software, uma paixão minha na qual sempre tive interesse, em que futuramente tenho planos de fazer faculdade nesse ramo. 
+            Sou uma pessoa simples, desde de criança muito curioso e observador, com uma constante ânsia de aprender e conhecer coisas novas, me relaciono bem socialmente, mas atuo também sozinho, lido bem com resolução de problemas e procuro sempre ser proativo. 
+             Tenho gostos diversos, curto muito escutar música, rap principalmente, tenho interesse em artes marciais e esportes no geral, práticas que exijam disciplina e gosto muito de comer.
+        </h5>
+    </div>
+</div>
+
+
+<!-- FUNDO FIXO -->
+
+
+
+        <footer class="p-lg-4 bg-dark text-center" style="height: 80px;">
+            
+            <img src="Logo Branca Menor.png" class="container-end" style="width: 50px; ">
+            
+        </footer>
+        
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer>
+
+    window.onscroll = function() {
+var navbar = document.querySelector('.navbar');
+if (window.scrollY > 50) {  // Quando rolar mais que 50px, aplica a navbar sólida
+navbar.classList.remove('navbar-transparent');
+navbar.classList.add('navbar-solid');
+} else {  // Quando estiver no topo, aplica a navbar transparente
+navbar.classList.remove('navbar-solid');
+navbar.classList.add('navbar-transparent');
+}
+};
+
+</script>
+
+</body>
 
 </html>
